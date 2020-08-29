@@ -166,26 +166,24 @@ main .intro {
   position: relative;
   background-color: #000;
   color: #fff;
+  font-family: "游明朝";
   text-align: center;
   height: 264px;
   margin-bottom: 30px;
-  padding: 52px 0 72px;
+  padding: 52px 20px 72px;
+  line-height: 2;
 }
 
 main .intro h1 {
-  line-height: 2;
   font-size: 36px;
-  font-family: "游明朝";
 }
 
 main .intro p {
-  line-height: 2;
   font-size: 14px;
-  font-family: "游明朝";
 }
 
 @media (max-width: 991px) {
-  main div.top-image {
+  main .top-image {
     background-position: top;
   }
 
@@ -197,16 +195,12 @@ main .intro p {
 
   main .intro {
     margin-bottom: 30px;
-    padding: 32px 0 32px;
+    padding: 32px 20px 32px;
     height: auto;
   }
 
   main .intro h1 {
     font-size: 24px;
-  }
-
-  main .intro p {
-    font-size: 14px;
   }
 }
 
