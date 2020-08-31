@@ -71,6 +71,7 @@ header .nav-link:hover {
 
 @media (max-width: 991px) {
   header {
+    position: relative;
     background-color: #000000;
   }
 
@@ -132,6 +133,76 @@ header .nav-link:hover {
 /*<--------- header */
 
 /* ---------> main */
+main div.top-image {
+  background-image: url("images/topimage.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 60vw;
+}
+
+main .top-image .top-text {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  height: 400px;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 0px;
+  margin: 0px;
+}
+
+main .top-image p {
+  writing-mode: vertical-rl;
+  font-size: 36px;
+  font-family: "Times New Roman", Times, serif;
+  color: #ffffff;
+  align-items: center;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+main .intro {
+  position: relative;
+  background-color: #000;
+  color: #fff;
+  font-family: "游明朝";
+  text-align: center;
+  height: 264px;
+  margin-bottom: 30px;
+  padding: 52px 20px 72px;
+  line-height: 2;
+}
+
+main .intro h1 {
+  font-size: 36px;
+}
+
+main .intro p {
+  font-size: 14px;
+}
+
+@media (max-width: 991px) {
+  main .top-image {
+    background-position: top;
+  }
+
+  main .top-image .top-text p {
+    font-size: 24px;
+    top: 50%;
+    right: 50%;
+  }
+
+  main .intro {
+    margin-bottom: 30px;
+    padding: 32px 20px 32px;
+    height: auto;
+  }
+
+  main .intro h1 {
+    font-size: 24px;
+  }
+}
 
 /*<---------- main */
 
