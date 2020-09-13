@@ -133,7 +133,7 @@ header .nav-link:hover {
 /*<--------- header */
 
 /* ---------> main */
-main div.top-image {
+main .top-image {
   background-image: url("images/topimage.jpg");
   background-size: cover;
   background-position: center;
@@ -204,6 +204,56 @@ main .intro p {
   }
 }
 
+main .hito-images {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 92%;
+  padding-top: 100px;
+  -webkit-box-align: start;
+}
+
+main .hito-images img {
+  height: 100%;
+  width: 25%;
+}
+
+main .hito-text {
+  position: relative;
+  background-color: #f5f5f5;
+  text-align: center;
+  font-family: "游明朝";
+  line-height: 3;
+  width: 92%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 60px;
+  padding: 50px 20px;
+}
+
+main .hito-text h1 {
+  font-size: 36px;
+  color: #442606;
+}
+
+main .hito-text p {
+  font-size: 14px;
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  main .hito-images img {
+    width: 50%;
+    height: 50%;
+  }
+
+  main .hito-text h1 {
+    font-size: 20px;
+  }
+}
 /*<---------- main */
 
 /*-----------> footer */
