@@ -204,8 +204,11 @@ main .intro p {
   }
 }
 
+main .hito {
+  margin: 0px 48px 60px;
+}
+
 main .hito-images {
-  margin: 0px 48px;
   display: flex;
   flex-wrap: wrap;
   padding-top: 100px;
@@ -221,7 +224,6 @@ main .hito-text {
   text-align: center;
   font-family: "游明朝";
   line-height: 3;
-  margin: 0px 48px 60px;
   padding: 50px 20px;
 }
 
@@ -235,9 +237,9 @@ main .hito-text p {
   color: #000000;
 }
 
-@media (max-width: 768px) {
-  main .hito-images {
-    margin: 0px 20px;
+@media (max-width: 767px) {
+  main .hito {
+    margin: 0px 20px 40px;
   }
 
   main .hito-images img {
@@ -247,7 +249,6 @@ main .hito-text p {
 
   main .hito-text {
     padding: 32px 20px;
-    margin: 0px 20px 40px;
     line-height: 2;
   }
 
