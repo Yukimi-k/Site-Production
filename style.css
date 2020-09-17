@@ -234,7 +234,6 @@ main .hito-text h1 {
 
 main .hito-text p {
   font-size: 14px;
-  color: #000000;
 }
 
 @media (max-width: 767px) {
