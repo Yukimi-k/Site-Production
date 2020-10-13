@@ -134,7 +134,7 @@ header .nav-link:hover {
 
 /* ---------> main */
 main .top-image {
-  background-image: url("images/topimage.jpg");
+  background-image: url("./images/topimage.jpg");
   background-size: cover;
   background-position: center;
   height: 60vw;
@@ -263,28 +263,25 @@ main .card-deck {
 main .card-deck .card {
   position: relative;
   border: none;
+  flex-grow: 1;
+}
+
+main .card-deck .card img {
+  width: 100%;
+}
+
+main .card-deck .card .triangle {
+  position: absolute;
 }
 
 main .card-deck .card .triangle::before {
   position: absolute;
   content: "";
-  border-top: 50px solid #fff;
-  border-left: 50px solid #fff;
-  border-right: 50px solid transparent;
-  border-bottom: 50px solid transparent;
-  border-width: 75px;
-}
-
-main .card-deck .card .triangle .c-title {
-  position: absolute;
-  font-size: 20px;
-  color: #442602;
-  font-family: "Segoe UI";
-  font-weight: bold;
-}
-
-main .card-deck .card img {
-  width: 100%;
+  border-top: 75px solid #fff;
+  border-left: 75px solid #fff;
+  border-right: 75px solid transparent;
+  border-bottom: 75px solid transparent;
+  filter: drop-shadow(20px 5px 10px rgba(0, 0, 0, 0.1));
 }
 
 main .card-deck .card .card-body {
@@ -296,6 +293,7 @@ main .card-deck .card .card-body {
 }
 
 main .card-deck .card .card-body .btn {
+  color: #fff;
   background-color: #000000;
   min-width: 200px;
   height: 55px;
@@ -309,7 +307,19 @@ main .card-deck .card .card-body .btn:hover {
   background-color: #734e30;
 }
 
+main .card-deck .card .triangle .c-title {
+  font-size: 20px;
+  color: #442602;
+  font-family: "Segoe UI";
+  font-weight: bold;
+  /* z-index: 100; */
+}
+
 @media (max-width: 1119px) and (min-width: 768px) {
+  main .card-deck .card {
+    flex-grow: 1;
+  }
+
   main .card-deck .card .card-body .btn {
     min-width: 150px;
   }
@@ -321,12 +331,8 @@ main .card-deck .card .card-body .btn:hover {
   }
 
   main .card-deck .card {
-    flex: 100%;
+    flex-basis: 100%;
     margin: 0px 0px 24px;
-  }
-
-  main .card-deck .card .card-body {
-    width: 100%;
   }
 
   main .card-deck .card .card-body .btn {
