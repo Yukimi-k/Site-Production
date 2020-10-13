@@ -1,0 +1,262 @@
+/*--------> common */
+.クラス名 {
+}
+
+.クラス名2 {
+}
+
+/* --------> common */
+
+/* --------> header */
+
+header {
+  position: absolute;
+  display: flex;
+  font-size: 14px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 90px;
+  width: 100%;
+}
+
+header .dropdown-item,
+.dropdown-item:hover,
+.nav-link {
+  color: #ffffff;
+}
+
+header .navbar-collapse {
+  display: flex;
+}
+
+header nav.navbar {
+  padding: 12px 48px;
+  width: 100%;
+}
+
+header img {
+  width: 144px;
+}
+
+header .dropdown-menu {
+  top: 70px;
+  padding: 0px;
+}
+
+header .dropdown-item {
+  background-color: #000000;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 226px;
+  height: 48px;
+  font-size: 12px;
+  padding: 16px 40px 16px 20px;
+}
+
+header .dropdown-item:hover {
+  background-color: #734e30;
+}
+
+header .nav-item {
+  padding: 10px;
+}
+
+header .nav-link {
+  padding-right: 24px;
+  padding-left: 12px;
+}
+
+header .nav-link:hover {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 991px) {
+  header {
+    position: relative;
+    background-color: #000000;
+  }
+
+  header .navbar-collapse {
+    position: absolute;
+    top: 90px;
+    left: 0px;
+    width: 100%;
+    background-color: #000000;
+  }
+
+  header .navbar-nav {
+    width: 100%;
+  }
+
+  header .nav-item {
+    padding: 10px 20px;
+  }
+
+  header .nav-link:hover {
+    color: #ffffff;
+  }
+
+  header .dropdown-item {
+    width: 100%;
+  }
+
+  header .navbar-toggler {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    height: 60px;
+    width: 18px;
+    border: none;
+    outline: none;
+  }
+
+  header .navbar-toggler span {
+    position: absolute;
+    right: 0px;
+    height: 4px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 3px;
+  }
+
+  header nav button span:nth-child(1) {
+    top: 24px;
+  }
+
+  header nav button span:nth-child(2) {
+    top: 32px;
+  }
+
+  header nav button span:nth-child(3) {
+    bottom: 16px;
+  }
+}
+/*<--------- header */
+
+/* ---------> main */
+main .top-image {
+  background-image: url("images/topimage.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 60vw;
+}
+
+main .top-image .top-text {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  height: 400px;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 0px;
+  margin: 0px;
+}
+
+main .top-image p {
+  writing-mode: vertical-rl;
+  font-size: 36px;
+  font-family: "Times New Roman", Times, serif;
+  color: #ffffff;
+  align-items: center;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+main .intro {
+  position: relative;
+  background-color: #000;
+  color: #fff;
+  font-family: "游明朝";
+  text-align: center;
+  height: 264px;
+  margin-bottom: 30px;
+  padding: 52px 20px 72px;
+  line-height: 2;
+}
+
+main .intro h1 {
+  font-size: 36px;
+}
+
+main .intro p {
+  font-size: 14px;
+}
+
+@media (max-width: 991px) {
+  main .top-image {
+    background-position: top;
+  }
+
+  main .top-image .top-text p {
+    font-size: 24px;
+    top: 50%;
+    right: 50%;
+  }
+
+  main .intro {
+    margin-bottom: 30px;
+    padding: 32px 20px 32px;
+    height: auto;
+  }
+
+  main .intro h1 {
+    font-size: 24px;
+  }
+}
+
+main .hito {
+  margin: 0px 48px 60px;
+}
+
+main .hito-images {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 100px;
+}
+
+main .hito-images img {
+  height: 100%;
+  width: 25%;
+}
+
+main .hito-text {
+  background-color: #f5f5f5;
+  text-align: center;
+  font-family: "游明朝";
+  line-height: 3;
+  padding: 50px 20px;
+}
+
+main .hito-text h1 {
+  font-size: 36px;
+  color: #442606;
+}
+
+main .hito-text p {
+  font-size: 14px;
+}
+
+@media (max-width: 767px) {
+  main .hito {
+    margin: 0px 20px 40px;
+  }
+
+  main .hito-images img {
+    width: 50%;
+    height: 50%;
+  }
+
+  main .hito-text {
+    padding: 32px 20px;
+    line-height: 2;
+  }
+
+  main .hito-text h1 {
+    font-size: 20px;
+  }
+}
+/*<---------- main */
+
+/*-----------> footer */
+
+/*-----------> footer */
